@@ -14,10 +14,13 @@
  * @package CreateBlock
  */
 
-if (! defined('ABSPATH'))
-{
+if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
+require_once __DIR__ . '/includes/class-dhali-plugin-updater.php';
+Dhali_Plugin_Updater::init( __FILE__, 'dhali-copyright', 'master' );
+
 /**
  * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s)
  * based on the registered block metadata. Behind the scenes, it registers also all assets so they can be enqueued
@@ -26,8 +29,7 @@ if (! defined('ABSPATH'))
  * @see https://make.wordpress.org/core/2025/03/13/more-efficient-block-type-registration-in-6-8/
  * @see https://make.wordpress.org/core/2024/10/17/new-block-type-registration-apis-to-improve-performance-in-wordpress-6-7/
  */
-function create_block_dhali_copyright_block_init()
-{
-	wp_register_block_types_from_metadata_collection(__DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php');
+function create_block_dhali_copyright_block_init() {
+	wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 }
-add_action('init', 'create_block_dhali_copyright_block_init');
+add_action( 'init', 'create_block_dhali_copyright_block_init' );
