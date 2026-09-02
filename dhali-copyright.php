@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-require_once __DIR__ . '/includes/class-dhali-plugin-updater.php';
+require_once __DIR__ . '/includes/dhali-plugin-updater.php';
 Dhali_Plugin_Updater::init( __FILE__, 'dhali-copyright', 'master' );
 
 /**
