@@ -8,7 +8,7 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Dhali Copyright',
 		'category' => 'widgets',
-		'icon' => 'smiley',
+		'icon' => 'privacy',
 		'description' => 'Example block scaffolded with Create Block tool.',
 		'example' => array(
 			
