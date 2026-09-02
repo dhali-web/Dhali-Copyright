@@ -10,6 +10,7 @@
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       dhali-copyright
+ * Update URI:        https://github.com/dhali-web/Dhali-Copyright
  *
  * @package CreateBlock
  */
